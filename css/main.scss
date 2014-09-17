@@ -1,0 +1,58 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+//colors
+$black: black;
+$color_cerulean_approx: #14a5e3;
+$color_teal_blue_approx: #0c4761;
+$color_bali_hai_approx: #76a4b8;
+$color_gallery_approx: #eee;
+$color_alto_approx: #ddd;
+$alabaster: #fafafa;
+$color_deep_cerulean_approx: #1080b0;
+
+//fonts
+$font_0: Merriweather;
+$font_1: serif;
+$font_2: IM Fell English;
+$font_3: Ubuntu Mono;
+$font_4: Consolas;
+$font_5: Deja Vu Sans Mono;
+$font_6: Bitstream Vera Sans Mono;
+$font_7: Monaco;
+$font_8: Courier New;
+
+$spacing-unit:     30px;
+
+//@extend-elements
+//original selectors
+//h1,  h2,  h3,  h4,  h5,  h6
+%extend_1 {
+	font-family: $font_2, $font_1;
+	font-weight: 400;
+	font-style: italic;
+	color: #0C4761;
+}
+
+
+// Using media queries with like this:
+// @include media-query($palm) {
+//     .wrapper {
+//         padding-right: $spacing-unit / 2;
+//         padding-left: $spacing-unit / 2;
+//     }
+// }
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+        "base",
+        "layout",
+        "syntax-highlighting"
+;

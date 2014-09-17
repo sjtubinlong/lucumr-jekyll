@@ -1,0 +1,385 @@
+@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400italic,700,700italic);
+@import url(http://fonts.googleapis.com/css?family=Merriweather:400,700,400italic,700italic,300,300italic&subset=latin,latin-ext);
+@import url(http://fonts.googleapis.com/css?family=IM+Fell+English:400italic&subset=latin,latin-ext);
+h1, h2, h3, h4, h5, h6 {
+  font-family: IM Fell English, serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #0C4761; }
+
+/**
+ * Reset some basic elements
+ */
+body {
+  font: 17px/25px Merriweather, serif;
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+  color: black; }
+
+a {
+  color: black;
+  font-weight: 400; }
+  a:hover {
+    color: #14A5E3; }
+
+h1 {
+  margin: 10px 0 25px;
+  font-size: 48px;
+  line-height: 54px; }
+  h1 a {
+    text-decoration: none; }
+    h1 a:hover {
+      text-decoration: underline; }
+  h1 + p.date {
+    margin-top: -25px;
+    font-style: italic; }
+
+h2 {
+  margin: 10px 0 25px;
+  margin: 25px 0 15px;
+  font-size: 38px;
+  line-height: 42px; }
+  h2 a {
+    text-decoration: none; }
+    h2 a:hover {
+      text-decoration: underline; }
+
+h3 {
+  font-size: 32px;
+  line-height: 34px; }
+  h3 a {
+    text-decoration: none; }
+    h3 a:hover {
+      text-decoration: underline; }
+
+h4 a {
+  text-decoration: none; }
+  h4 a:hover {
+    text-decoration: underline; }
+
+h5 a {
+  text-decoration: none; }
+
+h6 a {
+  text-decoration: none; }
+
+div.container {
+  max-width: 900px;
+  margin: 48px auto;
+  padding: 0 40px; }
+div.header {
+  float: left;
+  height: 25px;
+  margin-bottom: 42px; }
+div.navigation {
+  float: right;
+  height: 25px;
+  margin-bottom: 42px; }
+  div.navigation ul {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+    div.navigation ul li {
+      display: inline;
+      margin: 0 2px;
+      padding: 0; }
+div.body {
+  clear: both; }
+div.footer {
+  margin-top: 55px;
+  font-size: 16px;
+  text-align: right;
+  color: #76A4B8; }
+  div.footer p {
+    margin: 0; }
+  div.footer a {
+    color: #76A4B8; }
+div.line-block {
+  margin: 0; }
+div.entry-overview {
+  margin: 25px 122px 25px 102px; }
+  div.entry-overview h1 {
+    display: inline;
+    line-height: 25px;
+    margin: 0;
+    font-size: 17px;
+    font-weight: 700;
+    font-family: Merriweather, serif; }
+    div.entry-overview h1:after {
+      content: " —";
+      color: black; }
+    div.entry-overview h1 a {
+      color: #0C4761; }
+  div.entry-overview div.summary {
+    display: inline;
+    line-height: 25px;
+    margin: 0;
+    padding: 0; }
+    div.entry-overview div.summary p {
+      display: inline;
+      line-height: 25px;
+      margin: 0;
+      padding: 0; }
+  div.entry-overview div.date {
+    margin: 0;
+    padding: 0;
+    float: left;
+    width: 120px;
+    color: #1080B0;
+    text-align: right;
+    font-style: italic;
+    font-size: 14px; }
+  div.entry-overview div.detail {
+    margin-left: 140px; }
+div.pagination {
+  margin: 36px 0 0;
+  text-align: center; }
+  div.pagination strong {
+    font-weight: normal;
+    font-style: italic; }
+div.adspace {
+  text-align: center; }
+  div.adspace iframe {
+    margin: 25px auto 25px auto; }
+
+p {
+  margin: 0; }
+  p.tags {
+    text-align: right; }
+
+ul {
+  margin: 0; }
+  ul ol {
+    margin: 10px 0;
+    padding: 0 0 0 40px; }
+  ul ul {
+    margin: 10px 0;
+    padding: 0 0 0 40px; }
+  ul.tagcloud {
+    font-size: 16px;
+    margin: 36px 0;
+    padding: 0;
+    list-style: none; }
+    ul.tagcloud li {
+      margin: 0;
+      padding: 0 10px;
+      display: inline; }
+
+ol {
+  margin: 0; }
+  ol ul {
+    margin: 10px 0;
+    padding: 0 0 0 40px; }
+  ol ol {
+    margin: 10px 0;
+    padding: 0 0 0 40px; }
+
+pre {
+  margin: 0;
+  font-family: Ubuntu Mono, Consolas, Deja Vu Sans Mono, Bitstream Vera Sans Mono, Monaco, Courier New;
+  font-size: 0.9em;
+  line-height: 1.45;
+  background: none;
+  padding: 0; }
+
+table {
+  margin: 0;
+  border: 1px solid #dddddd;
+  border-collapse: collapse;
+  background: #fafafa; }
+  table.footnote {
+    margin: 25px 0;
+    background: transparent;
+    border: none; }
+    table.footnote td {
+      border: none;
+      padding: 9px 0 0;
+      font-size: 15px; }
+      table.footnote td.label {
+        padding-right: 10px; }
+      table.footnote td p {
+        margin: 0; }
+        table.footnote td p + p {
+          margin-top: 15px; }
+    table.footnote + table.footnote {
+      margin-top: -35px; }
+
+dt {
+  margin: 25px 0 16px;
+  padding: 0; }
+
+dd {
+  margin: 16px 0 25px 40px;
+  padding: 0; }
+
+li {
+  padding: 0; }
+
+code {
+  font-family: Ubuntu Mono, Consolas, Deja Vu Sans Mono, Bitstream Vera Sans Mono, Monaco, Courier New;
+  font-size: 0.9em;
+  background: #eeeeee; }
+
+tt {
+  font-family: Ubuntu Mono, Consolas, Deja Vu Sans Mono, Bitstream Vera Sans Mono, Monaco, Courier New;
+  font-size: 0.9em;
+  background: #eeeeee; }
+
+td {
+  padding: 2px 12px;
+  border: 1px solid #dddddd; }
+
+th {
+  padding: 2px 12px;
+  border: 1px solid #dddddd; }
+
+img.align-center {
+  margin: 15px auto;
+  display: block; }
+
+span.math img {
+  margin-bottom: -7px; }
+
+.highlight {
+  margin-bottom: 15px; }
+
+/**
+ * Syntax highlighting styles
+ */
+.highlight {
+  background: #fff; }
+  .highlight .c {
+    color: #998;
+    font-style: italic; }
+  .highlight .err {
+    color: #a61717;
+    background-color: #e3d2d2; }
+  .highlight .k {
+    font-weight: bold; }
+  .highlight .o {
+    font-weight: bold; }
+  .highlight .cm {
+    color: #998;
+    font-style: italic; }
+  .highlight .cp {
+    color: #999;
+    font-weight: bold; }
+  .highlight .c1 {
+    color: #998;
+    font-style: italic; }
+  .highlight .cs {
+    color: #999;
+    font-weight: bold;
+    font-style: italic; }
+  .highlight .gd {
+    color: #000;
+    background-color: #ffdddd; }
+  .highlight .gd .x {
+    color: #000;
+    background-color: #ffaaaa; }
+  .highlight .ge {
+    font-style: italic; }
+  .highlight .gr {
+    color: #aa0000; }
+  .highlight .gh {
+    color: #999999; }
+  .highlight .gi {
+    color: #000;
+    background-color: #ddffdd; }
+  .highlight .gi .x {
+    color: #000;
+    background-color: #aaffaa; }
+  .highlight .go {
+    color: #888888; }
+  .highlight .gp {
+    color: #555555; }
+  .highlight .gs {
+    font-weight: bold; }
+  .highlight .gu {
+    color: #aaaaaa; }
+  .highlight .gt {
+    color: #aa0000; }
+  .highlight .kc {
+    font-weight: bold; }
+  .highlight .kd {
+    font-weight: bold; }
+  .highlight .kp {
+    font-weight: bold; }
+  .highlight .kr {
+    font-weight: bold; }
+  .highlight .kt {
+    color: #458;
+    font-weight: bold; }
+  .highlight .m {
+    color: #009999; }
+  .highlight .s {
+    color: #dd1144; }
+  .highlight .na {
+    color: teal; }
+  .highlight .nb {
+    color: #0086b3; }
+  .highlight .nc {
+    color: #458;
+    font-weight: bold; }
+  .highlight .no {
+    color: teal; }
+  .highlight .ni {
+    color: purple; }
+  .highlight .ne {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nf {
+    color: #900;
+    font-weight: bold; }
+  .highlight .nn {
+    color: #555555; }
+  .highlight .nt {
+    color: navy; }
+  .highlight .nv {
+    color: teal; }
+  .highlight .ow {
+    font-weight: bold; }
+  .highlight .w {
+    color: #bbbbbb; }
+  .highlight .mf {
+    color: #009999; }
+  .highlight .mh {
+    color: #009999; }
+  .highlight .mi {
+    color: #009999; }
+  .highlight .mo {
+    color: #009999; }
+  .highlight .sb {
+    color: #dd1144; }
+  .highlight .sc {
+    color: #dd1144; }
+  .highlight .sd {
+    color: #dd1144; }
+  .highlight .s2 {
+    color: #dd1144; }
+  .highlight .se {
+    color: #dd1144; }
+  .highlight .sh {
+    color: #dd1144; }
+  .highlight .si {
+    color: #dd1144; }
+  .highlight .sx {
+    color: #dd1144; }
+  .highlight .sr {
+    color: #009926; }
+  .highlight .s1 {
+    color: #dd1144; }
+  .highlight .ss {
+    color: #990073; }
+  .highlight .bp {
+    color: #999999; }
+  .highlight .vc {
+    color: teal; }
+  .highlight .vg {
+    color: teal; }
+  .highlight .vi {
+    color: teal; }
+  .highlight .il {
+    color: #009999; }

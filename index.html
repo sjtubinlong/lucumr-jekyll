@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+  {% for post in site.posts %}
+  <div class=entry-overview>
+    <div class=date>{{ post.date | date: "%b %-d, %Y" }}</div>
+    <div class=detail>
+      <h1><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h1>
+      
+      {% if post.excerpt %}
+      <div class=summary>{{ post.excerpt }}.</div>
+      {% endif %}
+    </div>
+  </div>
+  {% endfor %}
+  <!--
+  {% if show_pagination and pagination.pages > 1 %}
+    {{ pagination }}
+  {% endif %} 
+  -->
